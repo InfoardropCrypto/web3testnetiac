@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAC Wallet | Testnet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="authContainer">
+        <button id="showSignUpForm">Sign Up</button>
+        <button id="showSignInForm">Sign In</button>
+        <div id="signInForm">
+            <input type="email" id="signInEmail" placeholder="Email" aria-label="Sign In Email">
+            <div class="password-container">
+                <input type="password" id="signInPassword" placeholder="Password" aria-label="Sign In Password">
+                <button type="button" class="toggle-password" onclick="togglePassword('signInPassword', this)">
+                    🙊
+                </button>
+            </div>
+            <button id="signInSubmit">Sign In</button>
+            <p id="signInError"></p>
+        </div>
+        <div id="signUpForm" style="display: none;">
+            <input type="email" id="signUpEmail" placeholder="Email" aria-label="Sign Up Email">
+            <div class="password-container">
+                <input type="password" id="signUpPassword" placeholder="Password" aria-label="Sign Up Password">
+                <button type="button" class="toggle-password" onclick="togglePassword('signUpPassword', this)">
+                    🙊
+                </button>
+            </div>
+            <button id="signUpSubmit">Sign Up</button>
+            <p id="signUpError"></p>
+        </div>
+    </div>
+
+    <div id="walletContainer" style="display: none;">
+        <h2>IAC WALLET</h2>
+        <div class="network-select-container">
+            <img id="networkIcon" src="iac.png" alt="Network Icon">
+            <select id="networkSelect">
+                <option value="btc" data-image="cryptologo/bitcoin.png">Bitcoin</option>
+                <option value="eth" data-image="cryptologo/ethereum.png">Ethereum</option>
+                <option value="lido" data-image="cryptologo/lido_dao.png">Lido
+                Dao</option>
+                <option value="steth"
+                data-image="cryptologo/steth.png">Lido Staked Ether</option>
+                <option value="polygon" data-image="cryptologo/polygon.png">Polygon</option>
+                <option value="bsc" data-image="cryptologo/bsc.png">BNB Smart Chain</option>
+                <option value="sol" data-image="cryptologo/solana.png">Solana</option>
+                <option value="jup" data-image="cryptologo/jupiter.png">Jupiter_SOL</option>
+                <option value="sui" data-image="cryptologo/sui.png">Sui</option>
+                <option value="ton" data-image="cryptologo/ton.png">Ton</option>
+                <option value="dogs" data-image="cryptologo/ton.png">Dogs</option>
+                <option value="usdt_erc20" data-image="cryptologo/tether.png">USDT_ERC20</option>
+                <option value="arb" data-image="cryptologo/arbitrum.png">Arbitrum</option>
+                <option value="weth" data-image="cryptologo/wethereum.png">WETH</option>
+                <option value="celestia" data-image="cryptologo/celestia.png">Celestia</option>
+                <option value="cardano" data-image="cryptologo/cardano.png">Cardano</option>
+                <option value="xrp" data-image="cryptologo/xrp.png">XRP</option>
+                <option value="tron" data-image="cryptologo/tron.png">Tron</option>
+            </select>
+        </div>
+
+        <p>User UID: <span id="userId"></span></p>
+        <p style="font-size: 13px;word-wrap: break-word;">Address: <span id="cryptoAddress">Memuat</span></p>
+        <p id="cryptoBalance">
+            Balance: <span id="balanceAmount"></span> <span id="balanceTicker"></span><span id="balancePrice"></span> 
+        </p>
+        
+        <input type="text" id="searchInput" placeholder="Search Crypto...">
+        
+        <!-- Send Crypto Section -->
+        <div>
+          <details>
+            <summary>Send Crypto</summary>
+            <input type="text" id="sendToUID" placeholder="Recipient Address" aria-label="Recipient Address">
+            <input type="text" id="sendToAddress" placeholder="Recipient UID" aria-label="Recipient UID">
+            <input type="number" id="sendAmount" placeholder="Amount" min="1" aria-label="Amount">
+            <details>
+              <summary>Use Memo</summary>
+            <input type="text" id="memo" placeholder="Memo (optional)" aria-label="Memo">
+            </details>
+            <input type="text" id="tokenBalance" style="display: none;">
+            <button id="sendCrypto">Send Crypto</button>
+            </details>
+            
+            <p>Gas Tracker: <span id="gasFee"></span></p>
+        </div>
+        <br>
+
+    </div>
+    
+    <footer style="text-align:center;">
+    <a href="mining.html"><button>Go to Mining Page</button></a>
+        <a href="browser.html"><button>Go to Browser</button></a>
+        <a href="explorer.html"><button>Go to Explorer</button></a>
+        <a href="staking.html"><button>Stake Your Asset</button></a>
+
+        <button id="signOutButton">Sign Out</button>
+        <a href="resetpassword.html"><button>Reset Password</button></a>
+    </footer>
+    
+    <!-- Include Firebase scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <!-- Include your script file -->
+    <script src="script.js"></script>
+</body>
+</html>

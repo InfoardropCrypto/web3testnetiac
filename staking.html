@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iac.icfinance.io</title>
+    <link rel="stylesheet" href="staking.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="authContainer">
+        <button id="showSignInForm">Connect Wallet</button>
+    </div>
+
+    <div id="stakingContainer" style="display: none;">
+        <nav class="logo-container">
+            <h1>IAC | STAKE</h1>
+            <select id="networkSelect">
+        <option value="ton">Ton</option>
+        <option value="btc">Bitcoin</option>
+        <option value="eth" data-image="cryptologo/ethereum.png">Ethereum</option>
+        <option value="steth"
+                data-image="cryptologo/steth.png">Lido Staked Ether</option>
+        <option value="polygon" data-image="cryptologo/polygon.png">Polygon</option>
+        <option value="bsc" data-image="cryptologo/bsc.png">BNB Smart Chain</option>
+        <option value="sol" data-image="cryptologo/solana.png">Solana</option>
+    </select>
+            <button id="connectWalletButton" class="button" onclick="confirm('Connected')">Connected</button>
+            <button id="themeToggle" class="icon-button">
+                <i class="fas fa-sun" id="themeIcon"></i>
+            </button>
+        </nav>
+
+        <div class="wallet-details">
+            <p>Wallet Address: <span id="walletAddress">Loading...</span></p>
+            <div>
+              <p>Wallet Balance : <span id="walletBalance">0.0000</span> <span id="selectedNetwork">Loading...</span></p>
+              </div>
+        </div>
+
+        <div class="stake-form">
+            <input type="number" id="stakeAmount" step="0.0001" placeholder="Stake amount">
+            <input type="number" id="stakeDuration" placeholder="Enter duration">
+            
+            <div>
+            </div>
+
+            <button id="stakeButton" class="stake-button">Stake</button>
+            <p>APY 20%</p>
+            <div id="rewardEstimateContainer">
+                <p>Estimated Reward: <span id="estimatedReward">0.0000</span> </p>
+            </div>
+            <p id="stakingResult" class="staking-result"></p>
+        </div>
+
+        <div id="currentStakes">
+            <h3>Current Stakes:</h3>
+            <!-- Stakes will be dynamically inserted here -->
+        </div>
+
+        <div>
+            
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="staking.js"></script>
+</body>
+</html>

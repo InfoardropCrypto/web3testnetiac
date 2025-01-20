@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iac.explorer.com</title>
+    <link rel="stylesheet" href="explorer.css">
+</head>
+<style>
+  body {
+    word-wrap: break-word;
+    word-break: break-all;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  #summary {
+    padding: 20px;
+    text-align: center;
+  }
+  .searchinputjup {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+</style>
+<body>
+    
+    <div id="mempoolContainer">
+    <h2>IAC | Explorer</h2>
+    <div id="pendingBlocks" class="mempool-section">
+        <h3>Pending Blocks</h3>
+        <!-- Animated pending blocks will be added here dynamically -->
+    </div>
+    
+    <div class="mempool-section"><h3>Confirmed Blocks</h3>
+    <details>
+      <summary></summary>
+    <div id="confirmedBlocks" class="mempool-section">
+        
+        
+    </div>
+    </details>
+    </div>
+</div>
+
+    
+    <div style="height:70px"></div>
+    
+    <div id="summary">
+        <!-- Total Transactions -->
+        <div id="totalTransactions">Loading…<span id="totalTransactionsCount"></span></div>
+
+        <!-- Transactions Today -->
+        <div id="dailyTransactions"><span id="dailyTransactionsCount"></span></div>
+
+        <!-- Total Gas Fee -->
+        <div id="totalGasFee"><span id="totalGasFeeAmount"></span></div>
+
+        <!-- Network Details -->
+        <div id="networkDetails"><span id="networkDetailsInfo"></span></div>
+    </div>
+
+    <input type="text" class="searchinputjup" id="searchInput" placeholder="Cari transaksi...">
+    
+    <hr>
+    
+    <details style="text-align:left;">
+      <summary>All Transactions</summary>
+      <div id="transactionsContainer">Data transaksi akan ditampilkan di sini.</div>
+    </details>
+
+    <footer>
+        <p><img src="/cryptologo/bitcoin.png"width="15px"style="border-radius:20px;>">IAC | Foundation</p>
+    </footer>
+    
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="explorer.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mining</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="miningContainer">
+        <h2>Mining</h2>
+        <div>
+            <label for="networkSelect">Select Network:</label>
+            <select id="networkSelect">
+                <option value="btc">Bitcoin</option>
+                <option value="eth">Ethereum</option>
+                <option value="polygon">Polygon</option>
+                <option value="bsc">Binance Smart Chain</option>
+                <option value="sol">Solana</option>
+                <option value="ton">Ton</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="miningOptionsSelect">Select Mining Option:</label>
+            <select id="miningOptionsSelect">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div>
+        
+        <button id="startMiningButton">Start Mining</button>
+        <p>Status: <span id="miningStatus">Not started</span></p>
+        <p>Current Balance: <span id="miningBalance">0</span> <span id="miningTicker">BTC</span></p>
+        <p>Time Remaining: <span id="miningTime">0</span> seconds</p>
+
+        <!-- Include Firebase scripts -->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+        <!-- Include your script file -->
+        <script src="mining.js"></script>
+    </div>
+</body>
+</html>

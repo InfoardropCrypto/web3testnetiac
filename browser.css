@@ -1,0 +1,214 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background: #000000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#searchInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #706e6e;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #000000;
+}
+
+.results-section h2, .wallet-section h2, .search-history-section h2 {
+    margin-bottom: 15px;
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.file-result {
+    display: flex;
+    align-items: center;
+}
+
+.file-result img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.file-result a {
+    text-decoration: none;
+    color: #706e6e;
+    font-weight: bold;
+}
+
+.file-result a:hover {
+    text-decoration: underline;
+}
+
+.wallet-section {
+    margin-top: 20px;
+}
+
+.network-select {
+    margin-top: 10px;
+}
+
+.network-select label {
+    margin-right: 10px;
+}
+
+.search-history {
+    margin-top: 1em;
+}
+
+.search-history .history-item {
+    background-color: #f1f1f1;
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-history .history-item:hover {
+    background-color: #e0e0e0;
+}
+
+.search-history div {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.search-history div:last-child {
+    border-bottom: none;
+}
+
+#browserContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-section, .results-section, .wallet-section, .search-history-section {
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Search Suggestion Styles */
+.search-suggestion {
+    position: absolute;
+    top: 60px; /* Adjust based on the height of the search bar */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000; /* Ensure it's above other elements */
+    display: none; /* Hide by default */
+}
+
+.search-suggestion .suggestion-item {
+    padding: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-suggestion .suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Updated Search History Styles */
+.search-history {
+    position: absolute;
+    top: 60px; /* Adjust based on the height of the search bar */
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Hide search history initially */
+.search-history.hidden {
+    display: none;
+}
+
+.search-history .history-item {
+    padding: 0.5em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-history .history-item:hover {
+    background-color: #f0f0f0;
+}
+
+.webstyle {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4e4e4e;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.webstyle:hover {
+    background-color: #706e6e;
+}
+.webstyle2 {
+  height: 20px;
+  border-radius:20px;
+}
+.bundar{
+  border-radius: 60px;
+  padding: 10px;
+}

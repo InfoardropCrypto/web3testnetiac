@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iacdex.io</title>
+    <link rel="stylesheet" href="iacdex.css">
+    <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+</head>
+<body>
+    <!-- Logo Uniswap -->
+    <nav class="logo-container">
+        <img src="cryptologo/iac1.png" alt="img logo">
+        
+        <button id="connectWalletButton" class="button">Connect Wallet</button>
+        <p id="walletStatus">Not Connected</p>
+        <p id="networkAddress" style="font-size:10px;">Network Address: N/A</p>
+    </nav>
+    
+    <div style="height:90px;"></div>
+    
+    <!-- Swap Section -->
+    
+    <div style="height:30px;"></div>
+
+    <div id="swapSection"> 
+
+    <div class="network-select" style="display:none;">
+        <label for="networkSelect">Select Network:</label>
+        <select id="networkSelect">
+            <option value="sol">Solana</option>
+        </select>
+    </div>
+
+    <br>
+
+    <div class="divjup">
+        <p id="fromBalance">You're Selling </p>
+        <label for="fromNetwork"></label>
+        <select id="fromNetwork">
+           <option value="btc">Bitcoin</option>
+            <option value="usdc_erc20">USDC</option>
+            <option value="sol">Solana</option>
+            <option value="usdt_erc20">USDT</option>
+            <option value="ton">Ton</option>
+            <option value="tron">Tron TRX</option>
+            <option value="sui">Sui</option>
+            <option value="celestia">Celestia</option>
+            <option value="cardano">Cardano</option>
+            <option value="xrp">XRP</option>
+            <option value="steth">Staking Eth</option>
+            <option value="polygon">Polygon</option>
+            
+        </select>
+        <input type="number" class="inputjup" id="amount" step="any" placeholder="0.00">
+    </div>
+    
+    <button id="autoSwitchButton" class="button">↑↓</button>
+
+    <div class="divjup2">
+        <p id="toBalance">You're Buying </p>
+        <label for="toNetwork"></label>
+        <select id="toNetwork">
+            <option value="sol">Solana</option>
+            <option value="btc">Bitcoin</option>
+            <option value="usdc_erc20">USDC</option>
+            <option value="usdt_erc20">USDT</option>
+            <option value="ton">Ton</option>
+            <option value="tron">Tron TRX</option>
+            <option value="sui">Sui</option>
+            <option value="celestia">Celestia</option>
+            <option value="cardano">Cardano</option>
+            <option value="xrp">XRP</option>
+            <option value="steth">Staking Eth</option>
+            <option value="polygon">Polygon</option>
+        </select>
+        <p class="estimatedamount" id="estimatedAmount">0</p>
+    </div>
+    
+    <div align="center">
+        <p id="price"> <span>Price: </span></p>
+        
+        <div id="countdown">Next Price Update In: 5s</div>
+        
+        <button id="swapButton" class="button">Swap</button>
+        
+        <p><i class="fas fa-gas-pump" style="color: #3b82f6; margin-right: 5px;"></i> Gas Fee: <span id="gasFee"></span></p>
+    </div>
+    
+    <br>
+    
+    <div id="lastUpdate">Last Updated: N/A</div>
+    <a href="explorer.html">Explorer |</a>
+    <a href="index.html">| Wallet</a>
+</div>
+
+    <br>
+    
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="iacdex.js"></script>
+</body>
+</html>

@@ -1,0 +1,511 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    color: #179ccdff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #179ccdff;
+}
+
+/* Navbar */
+nav.logo-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    word-wrap: break-word; /* Ensure text wraps to next line */
+    word-break: break-all;
+}
+
+nav.logo-container img {
+    height: 40px;
+    border-radius: 20px;
+}
+
+nav.logo-container a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+nav .button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav .button:hover {
+    
+}
+
+nav p {
+    margin: 0;
+    font-size: 17px;
+}
+
+/* Swap Section */
+#swapSection {
+    
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#swapSection p, #swapSection label {
+    font-size: 14px;
+    margin: 10px 0;    
+}
+
+select {
+  width: 100px;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: black;
+}
+
+#swapSection select {
+    width: 100px;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    
+    color: #fff;
+}
+
+.inputjup {
+    width: 250px;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #010b1f67;
+    border-radius: 5px;
+    
+}
+
+#swapSection .button {
+    background-color: #179ccdff;
+    color: #fff;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#swapSection .button:hover {
+    background-color: ##179ccdff;
+}
+
+#swapSection hr {
+    border: 1px solid #333;
+}
+
+/* Info and Details */
+#countdown, #lastUpdate, .estimatedamount {
+    font-size: 12px;
+    color: #A0A0A0;
+}
+
+#gasFee {
+    color: #179ccdff;
+}
+
+/* Footer Section */
+footer {
+    margin: 50px 0;
+}
+
+footer p {
+    color: #646365;
+    font-size: 12px;
+}
+.estimatedamount {
+    width: 250px;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #010b1f3d;
+    border-radius: 5px;
+    background-color: #010b1f3d;
+    color: #fff;
+}
+
+p.dark-theme {
+  color: white;
+}
+
+h1.dark-theme {
+  color: white;
+}
+
+body.dark-theme {
+    background-color: #121212; /* Warna latar belakang gelap */
+    color: #f5f6fa; /* Warna teks terang */
+}
+
+.wallet-details {
+    padding: 30px;
+    background-color: #ffffff;
+    color: #179ccdff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: left;
+    word-wrap: break-word; /* Ensure text wraps to next line */
+    word-break: break-all;
+}
+
+.wallet-details h1 {
+    font-size: 24px;
+    color: #179ccdff;
+}
+
+.wallet-details.dark-theme {
+    background-color: #1f1f1f; /* Latar belakang gelap untuk wallet details */
+}
+
+.stake-form {
+    margin: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stake-form.dark-theme {
+    background-color: #1f1f1f; /* Latar belakang gelap untuk stake form */
+}
+
+.stake-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.stake-form input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.stake-button {
+    background-color: #179ccdff; /* Warna biru */
+    height: 50px;
+    width: 100%;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    animation: slide-in 0.5s forwards;
+}
+
+.stake-button:hover {
+    background-color: ##179ccdff;
+}
+
+#currentStakes {
+    margin: 20px;
+}
+
+.staking-result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4cb6de; /* Merah untuk hasil */
+}
+
+#rewardEstimateContainer {
+    margin-top: 10px;
+    font-weight: bold;
+    color: ##179ccdff; /* Biru Muda untuk estimasi */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer.dark-theme {
+    background-color: #1f1f1f; /* Latar belakang gelap untuk footer */
+}
+
+/* Gaya tombol untuk tema gelap */
+button.dark-theme {
+    background-color: black; /* Warna biru lebih gelap untuk tema gelap */
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.icon-button i {
+    font-size: 24px; /* Ukuran ikon */
+    color: #3c8ce7; /* Warna ikon */
+    transition: color 0.3s;
+}
+
+body.dark-theme .icon-button i {
+    color: #ffcc00; /* Warna ikon saat tema gelap */
+}
+
+.pjupstake {
+  color: black;
+}
+.detailstx {
+  color: #4fd9ac;
+  font-family: Monospace;
+  margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #00000084;
+}
+.searchinputjup {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.divjup {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #010b1f67;
+    border-radius: 10px;
+}
+.divjup:hover {
+  box-shadow: 0 4px 20px #78e03992;
+}
+
+.divjup2 {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #010b1f3d;
+    border-radius: 10px;
+}
+
+.divjup2:hover {
+  box-shadow: 0 4px 20px #78e03992;
+}
+
+/* Voting Section */
+.voting-section {
+    background-color: #25262C;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.voting-section h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.voting-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #A0A0A0;
+}
+
+.voting-section input[type="text"],
+.voting-section input[type="number"],
+.voting-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.voting-section {
+    background-color: #179ccdff;
+    color: #fff;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.voting-section {
+    background-color: ##179ccdff;
+}
+
+.voting-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.voting-options div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.voting-options div:last-child {
+    margin-right: 0;
+}
+
+.voting-options label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.voting-result {
+    color: ##179ccdff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#gasFeeVoting {
+    font-size: 14px;
+    color: #179ccdff;
+    text-align: right;
+    margin-top: 10px;
+}
+
+/* Create Vote Section */
+.create-vote-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-vote-section h2 {
+    margin-bottom: 15px;
+}
+
+.create-vote-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.create-vote-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Vote Section */
+.vote-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vote-section h2 {
+    margin-bottom: 15px;
+}
+
+.create-vote-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.create-vote-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Vote Section */
+.vote-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vote-section h2 {
+    margin-bottom: 15px;
+}
+
+.vote-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Vote Results */
+#voteResults {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: black;
+    color: grey;
+}
+
+#voteResults h3 {
+    margin-bottom: 10px;
+}
+
+/* Gas Fee Display */
+#gasFeeDisplay {
+    font-weight: bold;
+    color: #e74c3c; /* Red color for emphasis */
+}
+
+/* Balance Display */
+#balanceDisplay {
+    font-weight: bold;
+}

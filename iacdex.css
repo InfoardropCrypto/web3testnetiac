@@ -1,0 +1,476 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1C1D21;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #00c6a2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #00ffa2;
+}
+
+nav.logo-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #101010;
+    padding: 5px 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+nav.logo-container img {
+    height: 40px;
+    border-radius: 20px;
+}
+
+nav.logo-container a {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+nav .button {
+    background-color: #00c6a2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav .button:hover {
+    background-color: #00ffa2;
+}
+
+nav p {
+    margin: 0;
+    font-size: 17px;
+}
+
+#swapSection {
+    background-color: #25262C;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#swapSection p, #swapSection label {
+    font-size: 14px;
+    margin: 10px 0;    
+}
+
+#swapSection select {
+    width: 100px;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.inputjup {
+    width: 250px;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #010b1f67;
+    border-radius: 5px;
+    background-color: #010b1f67;
+    color: #fff;
+}
+
+#swapSection .button {
+    background-color: #00c6a2;
+    color: #fff;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#swapSection .button:hover {
+    background-color: #00ffa2;
+}
+
+#swapSection hr {
+    border: 1px solid #333;
+}
+
+#countdown, #lastUpdate, .estimatedamount {
+    font-size: 12px;
+    color: #A0A0A0;
+}
+
+#gasFee {
+    color: #00c6a2;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+footer p {
+    color: #646365;
+    font-size: 12px;
+}
+.estimatedamount {
+    width: 250px;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #010b1f3d;
+    border-radius: 5px;
+    background-color: #010b1f3d;
+    color: #fff;
+}
+
+p.dark-theme {
+  color: white;
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #f5f6fa;
+}
+
+.wallet-details {
+    padding: 30px;
+    background-color: #ffffff;
+    color: #00c6a2;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    text-align: left;
+}
+
+.wallet-details h1 {
+    font-size: 24px;
+    color: #00c6a2;
+}
+
+.wallet-details.dark-theme {
+    background-color: #1f1f1f;
+}
+
+.stake-form {
+    margin: 20px;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stake-form.dark-theme {
+    background-color: #1f1f1f;
+}
+
+.stake-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.stake-form input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.stake-button {
+    background-color: #00c6a2;
+    height: 50px;
+    width: 100%;
+}
+
+.stake-button:hover {
+    background-color: #00ffa2;
+}
+
+#currentStakes {
+    margin: 20px;
+}
+
+.staking-result {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4fd9ac;
+}
+
+#rewardEstimateContainer {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #00ffa2;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer.dark-theme {
+    background-color: #1f1f1f;
+}
+
+button.dark-theme {
+    background-color: black;
+}
+
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.icon-button i {
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+body.dark-theme .icon-button i {
+    color: #ffcc00;
+}
+
+.pjupstake {
+  color: black;
+}
+.detailstx {
+  color: #4fd9ac;
+  font-family: Monospace;
+  margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #00000084;
+}
+.searchinputjup {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.divjup {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #010b1f67;
+    border-radius: 10px;
+}
+.divjup:hover {
+  box-shadow: 0 4px 20px #78e03992;
+}
+
+.divjup2 {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 10px;
+    background-color: #010b1f3d;
+    border-radius: 10px;
+}
+
+.divjup2:hover {
+  box-shadow: 0 4px 20px #78e03992;
+}
+
+ 
+.voting-section {
+    background-color: #25262C;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.voting-section h2 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.voting-section label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #A0A0A0;
+}
+
+.voting-section input[type="text"],
+.voting-section input[type="number"],
+.voting-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 20px 0;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+.voting-section {
+    background-color: #00c6a2;
+    color: #fff;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.voting-section {
+    background-color: #00ffa2;
+}
+
+.voting-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.voting-options div {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.voting-options div:last-child {
+    margin-right: 0;
+}
+
+.voting-options label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.voting-result {
+    color: #00ffa2;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#gasFeeVoting {
+    font-size: 14px;
+    color: #00c6a2;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.create-vote-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.create-vote-section h2 {
+    margin-bottom: 15px;
+}
+
+.create-vote-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.create-vote-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.vote-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vote-section h2 {
+    margin-bottom: 15px;
+}
+
+.create-vote-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.create-vote-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.vote-section {
+    margin: 20px;
+    padding: 20px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vote-section h2 {
+    margin-bottom: 15px;
+}
+
+.vote-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#voteResults {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: black;
+    color: grey;
+}
+
+#voteResults h3 {
+    margin-bottom: 10px;
+}
+
+#gasFeeDisplay {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+#balanceDisplay {
+    font-weight: bold;
+}
