@@ -109,6 +109,7 @@ const tickerMap = {
     xrp: 'XRP',
     tron: 'TRX',
     usdt_erc20: 'USDT',
+    usdc_erc20: 'USDC',
 };
 
 // Define gas fee range
@@ -131,6 +132,7 @@ const gasFeeRanges = {
     xrp: [0.01, 0.001],
     tron: [1, 2],
     usdt_erc20: [0.01, 0.1],
+    usdc_erc20: [0.01, 0.1],
 };
 
 // Fungsi untuk mendapatkan gas fee acak dalam rentang yang ditentukan
