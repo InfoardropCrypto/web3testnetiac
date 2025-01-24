@@ -475,3 +475,35 @@ function generateTransactionHash() {
     }
     return hash;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+            const selectElement = document.getElementById("fromNetwork");
+            const networkIcon = document.getElementById("networkIcon");
+
+            networkIcon.src = selectElement.options[selectElement.selectedIndex].getAttribute('data-image');
+
+            selectElement.addEventListener('change', function () {
+                const selectedOption = selectElement.options[selectElement.selectedIndex];
+                const imgSrc = selectedOption.getAttribute('data-image');
+                
+                if (imgSrc) {
+                    networkIcon.src = imgSrc;
+                }
+            });
+        });
+        
+document.addEventListener("DOMContentLoaded", function () {
+            const selectElement = document.getElementById("toNetwork");
+            const networkIcon = document.getElementById("networkIcon2");
+
+            networkIcon.src = selectElement.options[selectElement.selectedIndex].getAttribute('data-image');
+
+            selectElement.addEventListener('change', function () {
+                const selectedOption = selectElement.options[selectElement.selectedIndex];
+                const imgSrc = selectedOption.getAttribute('data-image');
+                
+                if (imgSrc) {
+                    networkIcon.src = imgSrc;
+                }
+            });
+        });
