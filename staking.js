@@ -34,6 +34,7 @@ const networkTickers = {
     eth: 'ETH',
     steth: 'ETH',
     polygon: 'POL',
+    sui: 'SUI',
     
 };
 
@@ -479,3 +480,19 @@ document.getElementById('themeToggle').addEventListener('click', function() {
         themeIcon.classList.add('fa-sun'); // Ubah ikon menjadi matahari
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+            const selectElement = document.getElementById("networkSelect");
+            const networkIcon = document.getElementById("networkIcon");
+
+            networkIcon.src = selectElement.options[selectElement.selectedIndex].getAttribute('data-image');
+
+            selectElement.addEventListener('change', function () {
+                const selectedOption = selectElement.options[selectElement.selectedIndex];
+                const imgSrc = selectedOption.getAttribute('data-image');
+                
+                if (imgSrc) {
+                    networkIcon.src = imgSrc;
+                }
+            });
+        });
