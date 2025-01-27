@@ -16,14 +16,15 @@
         <nav class="logo-container">
             <h1>IAC | STAKE</h1>
             <select id="networkSelect">
-        <option value="ton">Ton</option>
-        <option value="btc">Bitcoin</option>
+        <option value="ton" data-image="cryptologo/ton.png">Ton</option>
+        <option value="btc" data-image="cryptologo/bitcoin.png">Bitcoin</option>
         <option value="eth" data-image="cryptologo/ethereum.png">Ethereum</option>
         <option value="steth"
                 data-image="cryptologo/steth.png">Lido Staked Ether</option>
         <option value="polygon" data-image="cryptologo/polygon.png">Polygon</option>
         <option value="bsc" data-image="cryptologo/bsc.png">BNB Smart Chain</option>
         <option value="sol" data-image="cryptologo/solana.png">Solana</option>
+        <option value="sui" data-image="cryptologo/sui.png">Sui</option>
     </select>
             <button id="connectWalletButton" class="button" onclick="confirm('Connected')">Connected</button>
             <button id="themeToggle" class="icon-button">
@@ -34,7 +35,9 @@
         <div class="wallet-details">
             <p>Wallet Address: <span id="walletAddress">Loading...</span></p>
             <div>
+              <p>Network : <img id="networkIcon" src="iac.png" alt="Network Icon" style="text-align:;border-radius:100%;width:20px;"></p>
               <p>Wallet Balance : <span id="walletBalance">0.0000</span> <span id="selectedNetwork">Loading...</span></p>
+              
               </div>
         </div>
 
