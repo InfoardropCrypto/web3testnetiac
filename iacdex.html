@@ -11,7 +11,6 @@
 
 </head>
 <body>
-    <!-- Logo Uniswap -->
     <nav class="logo-container">
         <img src="cryptologo/iac1.png" alt="img logo">
         
@@ -38,35 +37,40 @@
     <br>
 
     <div class="divjup">
-        <p id="fromBalance">You're Selling </p>
-        <label for="fromNetwork"></label>
-        <select id="fromNetwork">
-           <<option value="btc" data-image="cryptologo/bitcoin.png">Bitcoin</option>
-                <option value="eth" data-image="cryptologo/ethereum.png">Ethereum</option>
-                <option value="lido" data-image="cryptologo/lido_dao.png">Lido
-                Dao</option>
-                <option value="steth"
-                data-image="cryptologo/steth.png">Lido Staked Ether</option>
-                <option value="usdc_erc20" data-image="cryptologo/usdc.png">USDC_ERC20</option>
-                <option value="usdt_erc20" data-image="cryptologo/tether.png">USDT_ERC20</option>
-                <option value="polygon" data-image="cryptologo/polygon.png">Polygon</option>
-                <option value="bsc" data-image="cryptologo/bsc.png">BNB Smart Chain</option>
-                <option value="sol" data-image="cryptologo/solana.png">Solana</option>
-                <option value="jup" data-image="cryptologo/jupiter.png">Jupiter</option>
-                <option value="sui" data-image="cryptologo/sui.png">Sui</option>
-                <option value="ton" data-image="cryptologo/ton.png">Ton</option>
-                <option value="dogs" data-image="cryptologo/dogs.png">Dogs</option>
-                <option value="arb" data-image="cryptologo/arbitrum.png">Arbitrum</option>
-                <option value="weth" data-image="cryptologo/wethereum.png">WETH</option>
-                <option value="celestia" data-image="cryptologo/celestia.png">Celestia</option>
-                <option value="cardano" data-image="cryptologo/cardano.png">Cardano</option>
-                <option value="xrp" data-image="cryptologo/xrp.png">XRP</option>
-                <option value="tron" data-image="cryptologo/tron.png">Tron</option>
-            
-        </select>
-        
-        <input type="number" class="inputjup" id="amount" step="any" placeholder="0.00">
+    <p id="fromBalance">You're Selling </p>
+    <label for="fromNetwork"></label>
+    <select id="fromNetwork">
+        <option value="btc" data-image="cryptologo/bitcoin.png">Bitcoin</option>
+        <option value="eth" data-image="cryptologo/ethereum.png">Ethereum</option>
+        <option value="lido" data-image="cryptologo/lido_dao.png">Lido Dao</option>
+        <option value="steth" data-image="cryptologo/steth.png">Lido Staked Ether</option>
+        <option value="usdc_erc20" data-image="cryptologo/usdc.png">USDC_ERC20</option>
+        <option value="usdt_erc20" data-image="cryptologo/tether.png">USDT_ERC20</option>
+        <option value="polygon" data-image="cryptologo/polygon.png">Polygon</option>
+        <option value="bsc" data-image="cryptologo/bsc.png">BNB Smart Chain</option>
+        <option value="sol" data-image="cryptologo/solana.png">Solana</option>
+        <option value="jup" data-image="cryptologo/jupiter.png">Jupiter</option>
+        <option value="sui" data-image="cryptologo/sui.png">Sui</option>
+        <option value="ton" data-image="cryptologo/ton.png">Ton</option>
+        <option value="dogs" data-image="cryptologo/dogs.png">Dogs</option>
+        <option value="arb" data-image="cryptologo/arbitrum.png">Arbitrum</option>
+        <option value="weth" data-image="cryptologo/wethereum.png">WETH</option>
+        <option value="celestia" data-image="cryptologo/celestia.png">Celestia</option>
+        <option value="cardano" data-image="cryptologo/cardano.png">Cardano</option>
+        <option value="xrp" data-image="cryptologo/xrp.png">XRP</option>
+        <option value="tron" data-image="cryptologo/tron.png">Tron</option>
+    </select>
+
+    <input type="number" class="inputjup" id="amount" step="any" placeholder="0.00">
+    
+    <!-- Tombol Pilihan Persentase -->
+    <div class="percentage-buttons">
+        <button onclick="setPercentage(25)">25%</button>
+        <button onclick="setPercentage(50)">50%</button>
+        <button onclick="setPercentage(75)">75%</button>
+        <button onclick="setPercentage(100)">100%</button>
     </div>
+</div>
     
     <button id="autoSwitchButton" class="button">↑↓</button>
 
