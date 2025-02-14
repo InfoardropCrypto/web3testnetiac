@@ -478,3 +478,25 @@ body.dark-theme .icon-button i {
 .bundar {
    border-radius: 100%;
 }
+  
+.percentage-buttons {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5px;
+    }
+
+    .percentage-buttons button {
+        width: 22%;
+        padding: 5px;
+        border: outset 1.5px #2f5f44;
+        background-color: #00ffa2;
+        color: black;
+        font-weight: bold;
+        border-radius: 1.5px;
+        cursor: pointer;
+    }
+
+    .percentage-buttons button:hover {
+        background-color: #00c6a2;
+        color: white;
+    }
