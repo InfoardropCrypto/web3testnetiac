@@ -507,3 +507,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         });
+        
+function setPercentage(percent) {
+        // Ambil saldo dari elemen "You're Selling"
+        let balanceText = document.getElementById("fromBalance").innerText;
+        let balance = parseFloat(balanceText.replace(/[^\d.]/g, "")) || 0; 
+        
+        // Hitung jumlah berdasarkan persentase
+        let amountInput = document.getElementById("amount");
+        amountInput.value = (balance * percent / 100).toFixed(10);
+    }
