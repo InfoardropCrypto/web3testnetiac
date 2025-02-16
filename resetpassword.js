@@ -1,14 +1,13 @@
-// Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBWjQFrRDZbfVWUdBwyv2GCMiTCJhixv68",
-    authDomain: "web3-wallet-2fb31.firebaseapp.com",
-    databaseURL: "https://web3-wallet-2fb31-default-rtdb.asia-southeast1.firebasedatabase.app",
-    projectId: "web3-wallet-2fb31",
-    storageBucket: "web3-wallet-2fb31.appspot.com",
-    messagingSenderId: "653013977555",
-    appId: "1:653013977555:web:dd205cc11dcf787edc8726",
-    measurementId: "G-3T27KLCRGJ"
-};
+    apiKey: "AIzaSyCtvxvFSXOT0fkRpl84U6LTD8xg8rGWrV8",
+    authDomain: "web3-iac-wallet.firebaseapp.com",
+    databaseURL: "https://web3-iac-wallet-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "web3-iac-wallet",
+    storageBucket: "web3-iac-wallet.firebasestorage.app",
+    messagingSenderId: "462702808978",
+    appId: "1:462702808978:web:843402ceb14d9eb026bb4b",
+    measurementId: "G-H8W6VMJJPH"
+  };
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
